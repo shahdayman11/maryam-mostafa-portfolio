@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maryam Hendawy - Portfolio</title>
+  <script src="/_sdk/element_sdk.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    html, body {
+      height: 100%;
+      width: 100%;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .fade-in {
+      animation: fadeIn 0.6s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .skill-tag {
+      transition: all 0.3s ease;
+    }
+
+    .skill-tag:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(134, 167, 136, 0.3);
+    }
+
+    .section-card {
+      transition: all 0.3s ease;
+    }
+
+    .section-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    .timeline-item {
+      position: relative;
+      padding-left: 30px;
+    }
+
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 8px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: #86A788;
+    }
+
+    .timeline-item::after {
+      content: '';
+      position: absolute;
+      left: 5px;
+      top: 20px;
+      width: 2px;
+      height: calc(100% - 12px);
+      background: #FFE2E2;
+    }
+
+    .timeline-item:last-child::after {
+      display: none;
+    }
+  </style>
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+ </head>
+ <body class="h-full">
+  <div id="app" class="w-full h-full overflow-auto" style="background: #FFFDEC;">
+   <div class="max-w-5xl mx-auto px-6 py-12"><!-- Header Section -->
+    <header class="fade-in mb-12 text-center">
+     <h1 id="fullName" class="text-5xl font-bold mb-3" style="color: #86A788;">Maryam Mostafa Hendawy</h1>
+     <p id="tagline" class="text-xl mb-6" style="color: #2C3E50;">Data Science Enthusiast</p>
+     <div class="flex flex-wrap justify-center gap-4 text-sm"><a id="phoneLink" href="tel:+201114499242" class="flex items-center gap-2 px-4 py-2 rounded-full transition-all" style="background: #FFE2E2; color: #2C3E50;"> 📞 <span id="phoneText">+20 11 14499242</span> </a> <a id="emailLink" href="mailto:hendawymaryam8@gmail.com" class="flex items-center gap-2 px-4 py-2 rounded-full transition-all" style="background: #FFE2E2; color: #2C3E50;"> ✉️ <span id="emailText">hendawymaryam8@gmail.com</span> </a> <a id="linkedinLink" href="https://www.linkedin.com/in/maryam-hendawy-35b1b9357/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-4 py-2 rounded-full transition-all" style="background: #FFE2E2; color: #2C3E50;"> 💼 LinkedIn </a>
+      <div class="flex items-center gap-2 px-4 py-2 rounded-full" style="background: #FFE2E2; color: #2C3E50;">
+       📍 <span id="locationText">Alexandria, Egypt</span>
+      </div>
+     </div>
+    </header><!-- Career Objective -->
+    <section class="section-card mb-10 p-8 rounded-2xl fade-in" style="background: #FFFFFF; animation-delay: 0.1s;">
+     <h2 class="text-3xl font-bold mb-4" style="color: #86A788;">Career Objective</h2>
+     <p class="text-lg leading-relaxed" style="color: #2C3E50;">Passionate about data science, with a strong interest in uncovering insights through data. Eager to apply my skills in Python, SQL, Excel, data visualization, and problem-solving to contribute to meaningful projects and continue developing in a real-world environment.</p>
+    </section><!-- Education -->
+    <section class="section-card mb-10 p-8 rounded-2xl fade-in" style="background: #FFFFFF; animation-delay: 0.2s;">
+     <h2 class="text-3xl font-bold mb-6" style="color: #86A788;">Education</h2>
+     <div class="timeline-item">
+      <h3 class="text-xl font-semibold mb-2" style="color: #2C3E50;">Faculty of Computers and Data Science</h3>
+      <p class="text-sm mb-2" style="color: #86A788;">Alexandria University | Sep 2023 - Jul 2027</p>
+      <p class="text-lg font-semibold" style="color: #2C3E50;">CGPA: 3.8637</p>
+     </div>
+    </section><!-- Professional Experience -->
+    <section class="section-card mb-10 p-8 rounded-2xl fade-in" style="background: #FFFFFF; animation-delay: 0.3s;">
+     <h2 class="text-3xl font-bold mb-6" style="color: #86A788;">Professional Experience</h2>
+     <div class="timeline-item">
+      <h3 class="text-xl font-semibold mb-2" style="color: #2C3E50;">IEEEXTREME Bootcamp</h3>
+      <p class="text-sm mb-3" style="color: #86A788;">Aug 2024 - Sept 2024</p>
+      <p class="leading-relaxed" style="color: #2C3E50;">Successfully completed an intensive bootcamp focused on advanced problem-solving techniques and algorithmic thinking and critical thinking in competitive programming environments and developed skills in C++ language.</p>
+     </div>
+    </section><!-- Skills -->
+    <section class="section-card mb-10 p-8 rounded-2xl fade-in" style="background: #FFFFFF; animation-delay: 0.4s;">
+     <h2 class="text-3xl font-bold mb-6" style="color: #86A788;">Technical Skills</h2>
+     <div class="flex flex-wrap gap-3 mb-8"><span class="skill-tag px-4 py-2 rounded-full font-medium" style="background: #FFE2E2; color: #2C3E50;">Java</span> <span class="skill-tag px-4 py-2 rounded-full font-medium" style="background: #FFE2E2; color: #2C3E50;">C++</span> <span class="skill-tag px-4 py-2 rounded-full font-medium" style="background: #FFE2E2; color: #2C3E50;">Python</span> <span class="skill-tag px-4 py-2 rounded-full font-medium" style="background: #FFE2E2; color: #2C3E50;">OOP</span> <span class="skill-tag px-4 py-2 rounded-full font-medium" style="background: #FFE2E2; color: #2C3E50;">Data Structures</span> <span class="skill-tag px-4 py-2 rounded-full font-medium" style="background: #FFE2E2; color: #2C3E50;">Algorithms</span> <span class="skill-tag px-4 py-2 rounded-full font-medium" style="background: #FFE2E2; color: #2C3E50;">Problem Solving</span> <span class="skill-tag px-4 py-2 rounded-full font-medium" style="background: #FFE2E2; color: #2C3E50;">Git &amp; GitHub</span> <span class="skill-tag px-4 py-2 rounded-full font-medium" style="background: #FFE2E2; color: #2C3E50;">SQL</span> <span class="skill-tag px-4 py-2 rounded-full font-medium" style="background: #FFE2E2; color: #2C3E50;">Microsoft Office</span>
+     </div>
+     <h3 class="text-2xl font-bold mb-4" style="color: #86A788;">Soft Skills</h3>
+     <div class="flex flex-wrap gap-3"><span class="skill-tag px-4 py-2 rounded-full font-medium" style="background: #86A788; color: white;">Communication</span> <span class="skill-tag px-4 py-2 rounded-full font-medium" style="background: #86A788; color: white;">Self-Motivated</span> <span class="skill-tag px-4 py-2 rounded-full font-medium" style="background: #86A788; color: white;">Multitasking</span> <span class="skill-tag px-4 py-2 rounded-full font-medium" style="background: #86A788; color: white;">Analytical Thinking</span> <span class="skill-tag px-4 py-2 rounded-full font-medium" style="background: #86A788; color: white;">Presentation Skills</span>
+     </div>
+    </section><!-- Projects -->
+    <section class="section-card mb-10 p-8 rounded-2xl fade-in" style="background: #FFFFFF; animation-delay: 0.5s;">
+     <h2 class="text-3xl font-bold mb-6" style="color: #86A788;">Projects</h2>
+     <div class="space-y-6">
+      <div class="p-6 rounded-xl" style="background: #FFE2E2;">
+       <h3 class="text-xl font-semibold mb-2" style="color: #2C3E50;">Wuzzuf Web Scraping &amp; Analysis</h3>
+       <p class="text-sm mb-3" style="color: #86A788;">May 2025</p>
+       <p class="leading-relaxed" style="color: #2C3E50;">Used Python and BeautifulSoup to scrape job postings from Wuzzuf.com. Cleaned and structured the data, then conducted detailed exploratory data analysis to uncover trends in job titles, locations, and required skills.</p>
+      </div>
+      <div class="p-6 rounded-xl" style="background: #FFE2E2;">
+       <h3 class="text-xl font-semibold mb-2" style="color: #2C3E50;">Student Course Timetabling via Graph Coloring</h3>
+       <p class="text-sm mb-3" style="color: #86A788;">Apr 2025 - May 2025</p>
+       <p class="leading-relaxed" style="color: #2C3E50;">Developed a timetable scheduling system using graph coloring algorithms to assign time slots to student courses with minimal conflicts. Compared multiple graph coloring strategies to optimize scheduling efficiency.</p>
+      </div>
+      <div class="p-6 rounded-xl" style="background: #FFE2E2;">
+       <h3 class="text-xl font-semibold mb-2" style="color: #2C3E50;">Machine Learning Models on Real-World Data</h3>
+       <p class="text-sm mb-3" style="color: #86A788;">May 2025</p>
+       <p class="leading-relaxed" style="color: #2C3E50;">Applied various machine learning models for both regression and classification tasks. Evaluated models using metrics such as accuracy, F1-score, and addressed overfitting using techniques like cross-validation and regularization.</p>
+      </div>
+      <div class="p-6 rounded-xl" style="background: #FFE2E2;">
+       <h3 class="text-xl font-semibold mb-2" style="color: #2C3E50;">Grocery Dataset Analysis and Visualization</h3>
+       <p class="text-sm mb-3" style="color: #86A788;">May 2024</p>
+       <p class="leading-relaxed" style="color: #2C3E50;">Worked with teammates on a data science project using R and Shiny, focusing on data cleaning, visualizations, clustering, and pattern recognition. Integrated the entire analysis into a cohesive GUI dashboard for easy interaction and interpretation.</p>
+      </div>
+      <div class="p-6 rounded-xl" style="background: #FFE2E2;">
+       <h3 class="text-xl font-semibold mb-2" style="color: #2C3E50;">E-commerce System</h3>
+       <p class="text-sm mb-3" style="color: #86A788;">Nov 2023 - Dec 2023</p>
+       <p class="leading-relaxed" style="color: #2C3E50;">Developed an e-commerce system utilizing Object-Oriented Programming (OOP) principles in Java, featuring a graphical user interface (GUI) and robust input/output handling for enhanced user interaction and data management.</p>
+      </div>
+     </div>
+    </section><!-- Footer -->
+    <footer class="text-center py-8 fade-in" style="animation-delay: 0.6s;">
+     <p class="text-sm" style="color: #2C3E50;">© 2025 Maryam Mostafa Hendawy. All rights reserved.</p>
+    </footer>
+   </div>
+  </div>
+  <script>
+    const defaultConfig = {
+      background_color: "#FFFDEC",
+      card_background: "#FFFFFF",
+      primary_accent: "#86A788",
+      secondary_accent: "#FFE2E2",
+      text_color: "#2C3E50",
+      full_name: "Maryam Mostafa Hendawy",
+      tagline: "Data Science Enthusiast",
+      phone: "+20 11 14499242",
+      email: "hendawymaryam8@gmail.com",
+      linkedin: "https://www.linkedin.com/in/maryam-hendawy-35b1b9357/",
+      location: "Alexandria, Egypt"
+    };
+
+    async function onConfigChange(config) {
+      const app = document.getElementById('app');
+      const backgroundColor = config.background_color || defaultConfig.background_color;
+      const cardBackground = config.card_background || defaultConfig.card_background;
+      const primaryAccent = config.primary_accent || defaultConfig.primary_accent;
+      const secondaryAccent = config.secondary_accent || defaultConfig.secondary_accent;
+      const textColor = config.text_color || defaultConfig.text_color;
+      
+      const fullName = config.full_name || defaultConfig.full_name;
+      const tagline = config.tagline || defaultConfig.tagline;
+      const phone = config.phone || defaultConfig.phone;
+      const email = config.email || defaultConfig.email;
+      const linkedin = config.linkedin || defaultConfig.linkedin;
+      const location = config.location || defaultConfig.location;
+
+      // Update background
+      app.style.background = backgroundColor;
+
+      // Update text content
+      document.getElementById('fullName').textContent = fullName;
+      document.getElementById('fullName').style.color = primaryAccent;
+      
+      document.getElementById('tagline').textContent = tagline;
+      document.getElementById('tagline').style.color = textColor;
+      
+      document.getElementById('phoneText').textContent = phone;
+      document.getElementById('phoneLink').href = `tel:${phone}`;
+      
+      document.getElementById('emailText').textContent = email;
+      document.getElementById('emailLink').href = `mailto:${email}`;
+      
+      document.getElementById('linkedinLink').href = linkedin;
+      
+      document.getElementById('locationText').textContent = location;
+
+      // Update colors
+      const cards = document.querySelectorAll('.section-card');
+      cards.forEach(card => {
+        card.style.background = cardBackground;
+      });
+
+      const headings = document.querySelectorAll('h2, .timeline-item h3 + p');
+      headings.forEach(heading => {
+        if (heading.tagName === 'H2') {
+          heading.style.color = primaryAccent;
+        } else {
+          heading.style.color = primaryAccent;
+        }
+      });
+
+      const contactBadges = document.querySelectorAll('header a, header > div > div');
+      contactBadges.forEach(badge => {
+        badge.style.background = secondaryAccent;
+        badge.style.color = textColor;
+      });
+
+      const projectCards = document.querySelectorAll('.space-y-6 > div');
+      projectCards.forEach(card => {
+        card.style.background = secondaryAccent;
+      });
+
+      const technicalSkills = document.querySelectorAll('.skill-tag');
+      technicalSkills.forEach((skill, index) => {
+        if (index < 10) {
+          skill.style.background = secondaryAccent;
+          skill.style.color = textColor;
+        } else {
+          skill.style.background = primaryAccent;
+          skill.style.color = 'white';
+        }
+      });
+    }
+
+    function mapToCapabilities(config) {
+      return {
+        recolorables: [
+          {
+            get: () => config.background_color || defaultConfig.background_color,
+            set: (value) => {
+              config.background_color = value;
+              window.elementSdk.setConfig({ background_color: value });
+            }
+          },
+          {
+            get: () => config.card_background || defaultConfig.card_background,
+            set: (value) => {
+              config.card_background = value;
+              window.elementSdk.setConfig({ card_background: value });
+            }
+          },
+          {
+            get: () => config.primary_accent || defaultConfig.primary_accent,
+            set: (value) => {
+              config.primary_accent = value;
+              window.elementSdk.setConfig({ primary_accent: value });
+            }
+          },
+          {
+            get: () => config.secondary_accent || defaultConfig.secondary_accent,
+            set: (value) => {
+              config.secondary_accent = value;
+              window.elementSdk.setConfig({ secondary_accent: value });
+            }
+          },
+          {
+            get: () => config.text_color || defaultConfig.text_color,
+            set: (value) => {
+              config.text_color = value;
+              window.elementSdk.setConfig({ text_color: value });
+            }
+          }
+        ],
+        borderables: [],
+        fontEditable: undefined,
+        fontSizeable: undefined
+      };
+    }
+
+    function mapToEditPanelValues(config) {
+      return new Map([
+        ["full_name", config.full_name || defaultConfig.full_name],
+        ["tagline", config.tagline || defaultConfig.tagline],
+        ["phone", config.phone || defaultConfig.phone],
+        ["email", config.email || defaultConfig.email],
+        ["linkedin", config.linkedin || defaultConfig.linkedin],
+        ["location", config.location || defaultConfig.location]
+      ]);
+    }
+
+    if (window.elementSdk) {
+      window.elementSdk.init({
+        defaultConfig,
+        onConfigChange,
+        mapToCapabilities,
+        mapToEditPanelValues
+      });
+    }
+  </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9ab449eb47bde191',t:'MTc2NTI4MTA2Ni4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
